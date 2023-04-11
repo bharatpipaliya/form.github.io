@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form task</title>
+    <style>
+        *
+        {
+            margin: 0px;
+        }
+        body{
+            background-color: yellow;
+        
+        }
+        form{
+            border: 2px solid black;
+            width: 500px;
+            margin-left: 450px;
+            margin-top: 50px;
+        
+        }
+        h1{
+            color: red;
+        }
+        label{
+            color:blue;
+        }
+        input[type=submit]
+        {
+            background-color: chocolate;
+            border: none;
+            padding: 15px;
+            color: red;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body align="center">
+    <form method="post">
+            <h1>Personal details</h1>
+            <br>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" id="password">
+
+        <br><br>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email">
+
+        <br><br>
+        <label for="gender">gender</label>
+        <input type="radio" name="gender" id="gender">male
+        <input type="radio" name="gender" id="gender">female
+
+        <br><br>
+        <label for="contact">contact no</label>
+        <input type="tel" name="contact" id="contact">
+
+        <br><br>
+        <h1>Educational details</h1>
+        <br>
+        <label>degree</label>
+        <select name="degree" >
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BSc.IT">BSc.IT</option>
+            <option value="MSc.IT">MSc.IT</option>
+            <option value="Com.Sci">Com.Sci</option>
+        </select>
+
+        <br>
+        <br>
+        <label>Engineering</label>
+        <select name="eng">
+            <option value="first year">first year</option>
+            <option value="second year">second year</option>
+            <option value="third year">third year</option>
+            <option value="interview">interview</option>
+            <option value="selected">selected</option>
+
+        </select>
+    <br>
+            <br>
+            <label>Hobby</label>
+            <input type="checkbox" name="hobby">playing chess
+            <input type="checkbox" name="hobby">reading books
+
+            <br><br>
+            <h1>address</h1>
+            <br>
+             <textarea name="add" id="" cols="30" rows="5"></textarea>
+
+             <br><br>
+             <label>attach resume</label>
+             <input type="file">
+
+             <br><br>
+             <input type="submit" value="submit">
+
+
+
+
+    </form>
+</body>
+</html>
